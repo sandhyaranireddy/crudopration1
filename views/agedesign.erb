@@ -1,0 +1,18 @@
+<html>
+<head>
+	<title> to create new page</title>
+	
+<body style="background-color:wheat;">
+	<%if @age>0 && @age<14%>
+		<h1 style="background-color:dimgray;border-style: dashed;"><%="you are child"%></h1>
+	<%elsif @age>=14 && @age<23%>
+		<h1 style="background-color:gray;border-style: dashed;"><%="you are teneeger"%></h1>
+	<%elsif @age>24 && @age<45%>
+		<h1 style="background-color:dimgray;border-style: dashed;"><%="you are adult"%></h1>
+	<%else%>
+		<h1 style="background-color:dimgray;border-style: dashed;"><%="you are senior citizen"%><h1>
+	<%end%>
+
+	</body>
+</head>
+</html>
